@@ -7,8 +7,8 @@ function testFunc() {
 
 
 function superbowlWin(arr) {
-  let winOrLose = arr.find((obj) => {
+  let wonOrLost = arr.find((obj) => {
     return obj.result === "W";
   });
-  return !!winOrLose?winOrLose.year : undefined;
+  return !!wonOrLost?winOrLose.year : undefined;
 }
