@@ -5,13 +5,10 @@ function testFunc() {
 }
 
 
-function superbowlWin(arr){
 
-  let winOrLose = arr.find(obj =>{
-    if ( obj.result ==='W'){
-      return obj.year;
-    }
-  })
-  return winOrLose ; 
-
+function superbowlWin(arr) {
+  let winOrLose = arr.find((obj) => {
+    return obj.result === "W";
+  });
+  return !!winOrLose?winOrLose.year : undefined;
 }
